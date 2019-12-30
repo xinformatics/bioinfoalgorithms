@@ -33,5 +33,15 @@ def frequentwords(text,k):
 def reverse_complement(text):
 	code = str.maketrans("ATGC", "TACG")
     return text.translate(code)[::-1]
-#---------------------------------------------------------------------------------
+
+#----------------------------------------------------  pattern matching -------------------
+def pattern_match(pat,gen):
+    loc = []
+    k,l = len(pat),len(gen)
+    for i in range(0,l - k):
+        if (pat == gen[i:i+k]):
+            loc.append(i)
+    print(*loc, sep=" ")
+#--------------------------------------
+
    
