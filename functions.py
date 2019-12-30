@@ -10,7 +10,7 @@ def patterncount(text,pattern):
 	
 	
 	
-#-----------------------------------------------------------------	
+#---------------------------------order ~ O(|text|^2	*k) --- bad running time- need to improve)
 def frequentwords(text,k):
     freq_pat = []
     count = []
