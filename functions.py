@@ -26,4 +26,12 @@ def frequentwords(text,k):
     print (freq_pat)
     unique = set(freq_pat)
     return(unique)
+
+
+#----------------------------------------------------- reverse complimentary-----
+
+def reverse_complement(text):
+	code = str.maketrans("ATGC", "TACG")
+    return text.translate(code)[::-1]
+---------------------------------------------------------------------------------
    
